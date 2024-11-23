@@ -545,13 +545,18 @@
         </div>
         <div class="footer-subsctibe-container">
           <p class="text footer-sm">Subscribe</p>
-          <form action="">
-            <label for="">
-              <input type="email" placeholder="E-mail" />
+          <form class="footer-form">
+            <label class="foote-form-lable" for="email-footer">
+              <input
+              class="footer-form-input"
+              type="email"
+              name="footer-form-input"
+              id="email-footer"
+              placeholder="E-mail" />
             </label>
             <button type="button" class="subscribe-btn">
               Subscribe
-              <svg class="icon" width="24" height="24">
+              <svg class="icon-footer-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -559,9 +564,8 @@
         </div>
       </div>
     </footer>
-
-    <!--
-    <div class="backdrop  is-open ">
+<!--
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn-close" type="button">
           <svg class="modal-close-icon" width="8" height="8">
@@ -621,22 +625,32 @@
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
-              rows=""
             ></textarea>
           </div>
         </form>
-        <div class="checkbox-container">
-          <input type="checkbox" />
-          <label for="" class="accept-terms">
-            <span></span>
-            <p>I accept the terms and conditions of the</p>
-            <a href="" target="_blank" class="link-privacy-policy"
+        <div class="modal-form-agreement-container">
+          <input
+            class="visually-hidden"
+            type="checkbox"
+            name="user-agreement"
+            id="user-agreement"
+            value="true"
+            checked
+          />
+          <label for="user-agreement" class="modal-form-agreement-text">
+            <span class="modal-form-checkbox">
+              <svg class="modal-form-checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a href="#" target="_blank" class="modal-form-agreement-link"
               >Privacy Policy</a
             >
           </label>
         </div>
         <button type="button" class="modal-btn-send">Send</button>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
