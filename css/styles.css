@@ -633,6 +633,10 @@ fill: #fff;
 .modal-form-input:focus + .modal-form-icon {
     fill: #4d5ae5;
 }
+
+.comment-container {
+    margin-bottom: 16px
+}
 .comment-form {
     height: 120px;
     padding: 8px 16px;
@@ -683,7 +687,8 @@ color: rgba(46, 47, 66, 0.4);
     fill: transparent;
 }
 
-input[type='checkbox']:checked +.modal-form-agreement-text .modal-form-checkbox {
+input[type='checkbox']:checked +.modal-form-agreement-text
+.modal-form-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
